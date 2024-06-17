@@ -64,10 +64,8 @@ To run the main script, execute:
 python main.py
 ```
 
-###Supporting Scripts
-generate_story.py
-
-Handles the story generation process, including segment generation and saving the final story to a file.
+### Supporting Scripts
+generate_story.py Handles the story generation process, including segment generation and saving the final story to a file.
 
 Functions:
 
@@ -101,7 +99,8 @@ generate_image_from_summary: Generates an image URL from the story summary.
 save_image: Saves the generated image to a file.
 Environment Variables
 OPENAI_API_KEY: Your OpenAI API key for accessing OpenAI services.
-Example Usage
+
+### Example Usage
 Define your story topics and world details in the main script:
 
 ```python

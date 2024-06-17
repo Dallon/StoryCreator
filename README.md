@@ -67,7 +67,7 @@ python main.py
 
 
 
-# Example Usage
+#### Example Usage
 Define your story topics and world details in the main script:
 
 ```python

@@ -120,5 +120,5 @@ OPENAI_API_KEY: Your OpenAI API key for accessing OpenAI services.
 Logging
 The program uses Python's built-in logging module to log information, errors, and debugging messages. Check the console output for details about the process.
 
-License
+#### License
 This project is licensed under the MIT License

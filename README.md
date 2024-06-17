@@ -64,8 +64,9 @@ To run the main script, execute:
 python main.py
 ```
 
-Supporting Scripts
+###Supporting Scripts
 generate_story.py
+
 Handles the story generation process, including segment generation and saving the final story to a file.
 
 Functions:

@@ -1,4 +1,4 @@
-# Story Generation, Audio, and Video Conversion
+# Story Generation, Audio, and (Black Screen) Video Conversion
 
 This project automates the generation of stories, their conversion to audio files, and the creation of related images and videos. The entire process is managed by a series of scripts that interact with OpenAI's API to create engaging content.
 

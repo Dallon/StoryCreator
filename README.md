@@ -64,6 +64,21 @@ To run the main script, execute:
 python main.py
 ```
 
+
+### Example Usage
+Define your story topics and world details in the main script:
+
+```python
+story_topics = ["The mysterious Island of Atlantis"]
+world_details = {"The mysterious Island of Atlantis": "Atlantis is a legendary island..."}
+```
+Run the main script:
+```
+python main.py
+```
+The script will generate stories, create images, convert the text to audio, and finally produce video files with the audio.
+
+
 ### Supporting Scripts
 generate_story.py Handles the story generation process, including segment generation and saving the final story to a file.
 
@@ -99,19 +114,6 @@ generate_image_from_summary: Generates an image URL from the story summary.
 save_image: Saves the generated image to a file.
 Environment Variables
 OPENAI_API_KEY: Your OpenAI API key for accessing OpenAI services.
-
-### Example Usage
-Define your story topics and world details in the main script:
-
-```python
-story_topics = ["The mysterious Island of Atlantis"]
-world_details = {"The mysterious Island of Atlantis": "Atlantis is a legendary island..."}
-```
-Run the main script:
-```
-python main.py
-```
-The script will generate stories, create images, convert the text to audio, and finally produce video files with the audio.
 
 Logging
 The program uses Python's built-in logging module to log information, errors, and debugging messages. Check the console output for details about the process.

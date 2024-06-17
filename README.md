@@ -60,8 +60,10 @@ The main script (`main.py`) coordinates the entire process. It is structured as 
 - **Video Conversion**: Converts the generated audio files to video files using `audio_to_video`.
 
 To run the main script, execute:
-```bash
+```
 python main.py
+```
+
 Supporting Scripts
 generate_story.py
 Handles the story generation process, including segment generation and saving the final story to a file.
@@ -106,10 +108,9 @@ Copy code
 story_topics = ["The mysterious Island of Atlantis"]
 world_details = {"The mysterious Island of Atlantis": "Atlantis is a legendary island..."}
 Run the main script:
-
-bash
-Copy code
+```
 python main.py
+```
 The script will generate stories, create images, convert the text to audio, and finally produce video files with the audio.
 
 Logging

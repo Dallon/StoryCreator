@@ -33,7 +33,7 @@ def generate_intro(client, story_topic: str, world_details: str, max_tokens: int
         intro_prompt = f"""
         You are an expert storyteller. Provide a brief, engaging introduction to the story titled '{story_topic}'.
         This introduction should be from the presenter's perspective, sharing their thoughts on the story and what the audience can expect without giving away major plot points.
-        The intro should be intriguing and set the tone for the story, no more than 3 or 4 sentences, making the listeners excited to hear more. Don't use "Ladies and Gentelemen" use "all", or "Ladies, Gentlemen, and everyone inbetween", and avoid cut off sentences.
+        The intro should be intriguing and set the tone for the story, no more than 3 or 4 sentences, making the listeners excited to hear more. Don't use "Ladies and Gentelemen" use "all", and avoid cut off sentences.
 
         Initial World Details: {world_details}
         """
@@ -118,7 +118,7 @@ def generate_story(api_key, story_topics, world_details, max_tokens_per_call=409
         current_story += "\n\nThat is the end of our story today, thank you so much for listening. Please, let me know your thoughts, and be well my friends."
 
         intro_content, _, _ = generate_intro(client, story_topic, world_detail)
-        final_story = f"Welcome to StoryStream. Today's story is called '{story_topic}'\n\n{intro_content}\n\n{current_story}"
+        final_story = f"Today's story is called '{story_topic}'\n\n{intro_content}\n\n{current_story}"
 
         foldername = story_topic.replace(' ', '_').lower()
         filename = f"{foldername}.txt"

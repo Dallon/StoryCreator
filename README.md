@@ -61,7 +61,7 @@ The main script (`main.py`) coordinates the entire process. It is structured as 
 
 To run the main script, execute:
 ```
-python main.py
+python story_creation_main.py
 ```
 
 
@@ -76,7 +76,7 @@ world_details = {"The mysterious Island of Atlantis": "Atlantis is a legendary i
 ```
 Run the main script:
 ```
-python main.py
+python story_creation_main.py
 ```
 The script will generate stories, create images, convert the text to audio, and finally produce video files with the audio.
 

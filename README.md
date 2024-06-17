@@ -103,10 +103,10 @@ OPENAI_API_KEY: Your OpenAI API key for accessing OpenAI services.
 Example Usage
 Define your story topics and world details in the main script:
 
-python
-Copy code
+```python
 story_topics = ["The mysterious Island of Atlantis"]
 world_details = {"The mysterious Island of Atlantis": "Atlantis is a legendary island..."}
+```
 Run the main script:
 ```
 python main.py

@@ -51,7 +51,7 @@ Ensure you have the following installed and configured:
 
 ### Main Script
 
-The main script (`main.py`) coordinates the entire process. It is structured as follows:
+The main script (`story_creation_main.py`) coordinates the entire process. It is structured as follows:
 - **Logging Configuration**: Sets up logging to track the process.
 - **API Key Setup**: Retrieves the OpenAI API key from environment variables.
 - **Story Generation**: Uses the `generate_story` function to create stories based on given topics and world details.

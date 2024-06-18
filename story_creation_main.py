@@ -27,8 +27,9 @@ def main():
     world_details = {"The mysterious Island of Atlantis": "Atlantis is a legendary island first mentioned in Plato's dialogues Timaeus and Critias, written about 360 BC. According to Plato, Atlantis was a naval power lying beyond the Pillars of Hercules that conquered many parts of Western Europe and Africa 9,000 years before the time of Solon, or approximately 9600 BC. After a failed attempt to invade Athens, Atlantis sank into the ocean in a single day and night of misfortune . The island was said to be larger than Asia and Libya combined, and was the home of a technologically advanced civilization. The story of Atlantis has captivated the imagination of people for centuries, with many theories and speculations about its possible location and existence."}
 
 
-    # Step 1: Generate the stories
-    generated_story_paths, total_cost = generate_story(api_key, story_topics, world_details)
+    # Step 1: Generate the stories, specifying the audience of the story as appropriate ex/ "all", "children", "adults"
+    logging.info("The story creation process has begun, please wait... this may take a few minutes")
+    generated_story_paths, total_cost = generate_story(api_key, story_topics, world_details, intended_audience="all")
 
     # Display the total cost
     logging.info(f"Total cost for generating all stories: ${total_cost:.2f}")

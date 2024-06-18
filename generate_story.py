@@ -62,7 +62,7 @@ def save_story_to_file(story: str, foldername: str, filename: str):
     logging.info(f"Story generated and saved to {filepath}")
     return filepath
 
-def generate_story(api_key, story_topics, world_details, max_tokens_per_call=4095, total_token_limit=20000):
+def generate_story(api_key, story_topics, world_details, intended_audience, max_tokens_per_call=4095, total_token_limit=10000):
     client = setup_openai_client(api_key)
 
     token_cost_per_million = 15 / 1_000_000
@@ -76,6 +76,7 @@ def generate_story(api_key, story_topics, world_details, max_tokens_per_call=409
         total_tokens_used = 0
         total_time_taken = 0
         world_detail = world_details.get(story_topic, "")
+        audience = intended_audience
 
         while total_tokens_used < total_token_limit:
             remaining_tokens = total_token_limit - total_tokens_used
@@ -83,7 +84,7 @@ def generate_story(api_key, story_topics, world_details, max_tokens_per_call=409
             story_completion_percentage = (total_tokens_used / total_token_limit) * 100
 
             prompt = f"""
-            You are a master storyteller with a gift for captivating narratives. Ensure the story builds elements of mystery, adventure, has a surprising twist, and is engaging for a general audience. Your style resembles that of renowned modern literary works.
+            You are a master storyteller with a gift for captivating narratives. Ensure the story builds elements of mystery, adventure, has a surprising twist, is appropriate content and engaging for a {audience} audience. Your style resembles that of renowned modern literary works.
 
             Initial World Details(which may have changed, review the story): {world_detail}
 
